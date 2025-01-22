@@ -1,6 +1,6 @@
 // @ts-check
 // import { test, describe, expect, beforeEach } from '@playwright/test'
-const { test, expect, beforeEach } = require('@playwright/test')
+const { test, expect } = require('@playwright/test')
 
 // test('has title', async ({ page }) => {
 //   await page.goto('https://playwright.dev/');

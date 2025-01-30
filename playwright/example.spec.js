@@ -1,6 +1,6 @@
 // @ts-check
 // import { test, describe, expect, beforeEach } from '@playwright/test'
-const { test, describe, expect } = require('@playwright/test')
+const { test, expect } = require('@playwright/test')
 
 // test('has title', async ({ page }) => {
 //   await page.goto('https://playwright.dev/');
@@ -20,7 +20,7 @@ const { test, describe, expect } = require('@playwright/test')
 // });
 
 
-describe('Pokedex', () => {
+test.describe('Pokedex', () => {
   test('front page can be opened', async ({ page }) => {
     await page.goto('')
     await expect(page.getByText('ivysaur')).toBeVisible()
